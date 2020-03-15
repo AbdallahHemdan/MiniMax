@@ -4,13 +4,13 @@
 
 ---
 
-- `Minimax is a kind of backtracking algorithm to find the optimal move for a player, assuming that your opponent also plays optimally.`
+- Minimax is a kind of backtracking algorithm to find the optimal move for a player, assuming that your opponent also plays optimally.
 
-- `In Minimax the two players are called maximizer and minimizer. The maximizer tries to get the highest score possible while the minimizer tries to do the opposite and get the lowest score possible.`
+- In Minimax the two players are called maximizer and minimizer. The maximizer tries to get the highest score possible while the minimizer tries to do the opposite and get the lowest score possible.
 
-- `Every board state has a value associated with it. In a given state if the maximizer has upper hand then, the score of the board will tend to be some positive value. If the minimizer has the upper hand in that board state then it will tend to be some negative value.`
+- Every board state has a value associated with it. In a given state if the maximizer has upper hand then, the score of the board will tend to be some positive value. If the minimizer has the upper hand in that board state then it will tend to be some negative value.
 
-- `Since this is a backtracking based algorithm, it tries all possible moves, then backtracks and makes a decision.`
+- Since this is a backtracking based algorithm, it tries all possible moves, then backtracks and makes a decision.
 
 <div align="center">
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/minmax1.png">
@@ -56,25 +56,25 @@ int main() {
 
 ## 🔎 Introduction to Evaluation Function
 
-- `In the above example, the scores (leaves of Game Tree) are given to us. For a typical game, we need to derive these values by a function, This function is often known as Evaluation Function, It is sometimes also called Heuristic Function.`
+- In the above example, the scores (leaves of Game Tree) are given to us. For a typical game, we need to derive these values by a function, This function is often known as Evaluation Function, It is sometimes also called Heuristic Function.
 
-- `The basic idea behind the evaluation function is to give a high value for a board if maximizer‘s turn or a low value for the board if minimizer‘s turn.`
+- The basic idea behind the evaluation function is to give a high value for a board if maximizer‘s turn or a low value for the board if minimizer‘s turn.
 
-- `let us consider X as the maximizer and O as the minimizer.`
+- let us consider X as the maximizer and O as the minimizer.
 
-  1.  `If X wins on the board we give it a positive value of +10`
+  1.  If X wins on the board we give it a positive value of +10
 
       <p align="center">
          <img src="https://media.geeksforgeeks.org/wp-content/uploads/TicTacToe.png" />
       </p>
 
-  2.  `If O wins on the board we give it a negative value of -10.`
+  2.  If O wins on the board we give it a negative value of -10.
 
       <p align="center">
          <img src="https://media.geeksforgeeks.org/wp-content/uploads/TicTacToe1.png" />
       </p>
 
-  3.  `If no one has won or the game results in a draw then we give a value of +0.`
+  3.  If no one has won or the game results in a draw then we give a value of +0.
       <p align="center">
          <img src="https://media.geeksforgeeks.org/wp-content/uploads/TicTacToe2-1.png" />
       </p>
@@ -143,7 +143,7 @@ int main() {
 
 ---
 
-- `We shall be introducing a new function called findBestMove(). This function evaluates all the available moves using minimax() and then returns the best move the maximizer can make`
+- We shall be introducing a new function called findBestMove(). This function evaluates all the available moves using minimax() and then returns the best move the maximizer can make
 
 ```pseudo
 function findBestMove(board):
@@ -154,7 +154,7 @@ function findBestMove(board):
     return bestMove
 ```
 
-- `To check whether or not the current move is better than the best move we take the help of minimax() function which will consider all the possible ways the game can go and returns the best value for that move, assuming the opponent also plays optimally`
+- To check whether or not the current move is better than the best move we take the help of minimax() function which will consider all the possible ways the game can go and returns the best value for that move, assuming the opponent also plays optimally
 
 ```pseudo
 function minimax(board, depth, isMaximizingPlayer):
@@ -176,7 +176,7 @@ function minimax(board, depth, isMaximizingPlayer):
         return bestVal
 ```
 
-- `To check whether the game is over and to make sure there are no moves left we use isMovesLeft() function`
+- To check whether the game is over and to make sure there are no moves left we use isMovesLeft() function
 
 ```pseudo
 function isMovesLeft(board):
@@ -190,12 +190,17 @@ function isMovesLeft(board):
 
 ---
 
-- `Even though the following AI plays perfectly, it might choose to make a move which will result in a slower victory or a faster loss. Lets take an example and explain it.`
+- Even though the following AI plays perfectly, it might choose to make a move which will result in a slower victory or a faster loss. Lets take an example and explain it.
 
-- `Assume that there are 2 possible ways for X to win the game from a give board state.` - Move A : X can win in 2 move - Move B : X can win in 4 moves
+- Assume that there are 2 possible ways for X to win the game from a give board state.
 
-- `Our evaluation function will return a value of +10 for both moves A and B. Even though the move A is better because it ensures a faster victory, our AI may choose B sometimes.`
-- `To overcome this problem we subtract the depth value from the evaluated score. This means that in case of a victory it will choose a the victory which takes least number of moves and in case of a loss it will try to prolong the game and play as many moves as possible. So the new evaluated value will be` - Move A will have a value of +10 – 2 = 8 - Move B will have a value of +10 – 4 = 6
+  - Move A : X can win in 2 move
+  - Move B : X can win in 4 moves
+
+- Our evaluation function will return a value of +10 for both moves A and B. Even though the move A is better because it ensures a faster victory, our AI may choose B sometimes.
+- To overcome this problem we subtract the depth value from the evaluated score. This means that in case of a victory it will choose a the victory which takes least number of moves and in case of a loss it will try to prolong the game and play as many moves as possible. So the new evaluated value will be
+  - Move A will have a value of +10 – 2 = 8
+  - Move B will have a value of +10 – 4 = 6
 
 ```cpp
 #include <bits\stdc++.h>
@@ -369,4 +374,4 @@ int main() {
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/TIC_TAC.jpg"/>
 </p>
 
-- `This image depicts all the possible paths that the game can take from the root board state. It is often called the Game Tree`
+- This image depicts all the possible paths that the game can take from the root board state. It is often called the Game Tree
