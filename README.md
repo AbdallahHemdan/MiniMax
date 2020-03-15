@@ -379,7 +379,7 @@ int main() {
 ---
 ## 🥇 Unbeatable tic tac toe using Minimax algorithm
 
-<img src="../Minimax&#32;algo/unbeatable&#32;tic&#32;tac&#32;toe/screenshots/1.png">
-<img src="../Minimax&#32;algo/unbeatable&#32;tic&#32;tac&#32;toe/screenshots/2.png">
-<img src="../Minimax&#32;algo/unbeatable&#32;tic&#32;tac&#32;toe/screenshots/2.png">
-<img src="../Minimax&#32;algo/unbeatable&#32;tic&#32;tac&#32;toe/screenshots/4.png">
+<img src="https://github.com/AbdallahHemdan/MiniMax/blob/master/unbeatable%20tic%20tac%20toe/screenshots/1.png">
+<img src="https://github.com/AbdallahHemdan/MiniMax/blob/master/unbeatable%20tic%20tac%20toe/screenshots/2.png">
+<img src="https://github.com/AbdallahHemdan/MiniMax/blob/master/unbeatable%20tic%20tac%20toe/screenshots/3.png">
+<img src="https://github.com/AbdallahHemdan/MiniMax/blob/master/unbeatable%20tic%20tac%20toe/screenshots/4.png">
