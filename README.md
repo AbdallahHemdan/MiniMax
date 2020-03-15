@@ -375,3 +375,11 @@ int main() {
 </p>
 
 - This image depicts all the possible paths that the game can take from the root board state. It is often called the Game Tree
+
+---
+## 🥇 Unbeatable tic tac toe using Minimax algorithm
+
+<img src="../Minimax&#32;algo/unbeatable&#32;tic&#32;tac&#32;toe/screenshots/1.png">
+<img src="../Minimax&#32;algo/unbeatable&#32;tic&#32;tac&#32;toe/screenshots/2.png">
+<img src="../Minimax&#32;algo/unbeatable&#32;tic&#32;tac&#32;toe/screenshots/2.png">
+<img src="../Minimax&#32;algo/unbeatable&#32;tic&#32;tac&#32;toe/screenshots/4.png">
