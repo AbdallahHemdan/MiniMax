@@ -380,7 +380,10 @@ int main() {
 ## 🥇 Unbeatable tic tac toe using Minimax algorithm
 
 <img src="https://github.com/AbdallahHemdan/MiniMax/blob/master/screenshots/1.png">
+<hr/>
 <img src="https://github.com/AbdallahHemdan/MiniMax/blob/master/screenshots/2.png">
+<hr/>
 <img src="https://github.com/AbdallahHemdan/MiniMax/blob/master/screenshots/3.png">
+<hr/>
 <img src="https://github.com/AbdallahHemdan/MiniMax/blob/master/screenshots/4.png">
 
